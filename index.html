@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharos Autonomous Agent Gateway (PAAG) - Dashboard</title>
+    <!-- Tailwind CSS for high-quality, professional dark mode UI -->
+    <script src="https://jsdelivr.net"></script>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans min-h-screen">
+
+    <!-- Header Navigation -->
+    <header class="border-b border-slate-800 bg-slate-900/50 backdrop-blur px-6 py-4 flex justify-between items-center">
+        <div class="flex items-center space-x-3">
+            <span class="text-2xl">🧭</span>
+            <h1 class="text-xl font-bold tracking-tight bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">Pharos PAAG Dashboard</h1>
+        </div>
+        <div class="flex items-center space-x-2 bg-emerald-500/10 border border-emerald-500/20 px-3 py-1 rounded-full text-xs text-emerald-400 font-medium">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            <span>Connected to Pharos L1 Testnet</span>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="max-w-7xl mx-auto p-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- CARD 1: Agent Wallet Status -->
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-xl">
+            <div class="flex justify-between items-start mb-4">
+                <h3 class="text-slate-400 text-sm font-semibold uppercase tracking-wider">Agent Balance</h3>
+                <span class="text-indigo-400 text-xl">💰</span>
+            </div>
+            <div class="text-3xl font-bold mb-2">1,250.00 <span class="text-lg font-medium text-slate-400">PROS</span></div>
+            <p class="text-xs text-slate-500">Smart Contract Wallet address: 0x71C...49Ba</p>
+            <div class="mt-4 pt-4 border-t border-slate-800 flex justify-between text-sm">
+                <span class="text-slate-400">Daily Spending Limit:</span>
+                <span class="font-semibold text-slate-200">100 PROS</span>
+            </div>
+        </div>
+
+        <!-- CARD 2: Real-time Compliance Routing -->
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-xl">
+            <div class="flex justify-between items-start mb-4">
+                <h3 class="text-slate-400 text-sm font-semibold uppercase tracking-wider">zk-KYC Compliance</h3>
+                <span class="text-blue-400 text-xl">🛡️</span>
+            </div>
+            <div class="flex items-center space-x-3 mb-2">
+                <div class="px-3 py-1 rounded-md bg-blue-500/10 text-blue-400 text-sm font-medium border border-blue-500/20">Active</div>
+                <span class="text-2xl font-bold">100% Secure</span>
+            </div>
+            <p class="text-xs text-slate-500">MCP skill module continuously scanning inbound transactions.</p>
+            <div class="mt-4 pt-4 border-t border-slate-800 flex justify-between text-sm">
+                <span class="text-slate-400">Last AML Scan:</span>
+                <span class="font-medium text-slate-300">Just now</span>
+            </div>
+        </div>
+
+        <!-- CARD 3: Quick Agent Control -->
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-xl flex flex-col justify-between">
+            <div>
+                <h3 class="text-slate-400 text-sm font-semibold uppercase tracking-wider mb-4">Trigger Autonomous Action</h3>
+                <p class="text-sm text-slate-300 mb-4">Simulate a machine-to-machine microtransaction routing through the MCP Server.</p>
+            </div>
+            <button onclick="alert('PAAG MCP Tool called: Microtransaction of 5 PROS securely routed on-chain in 0.8 seconds!')" class="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-medium py-2.5 px-4 rounded-xl transition duration-200 shadow-lg shadow-indigo-600/20 cursor-pointer">
+                Simulate Agent Payment
+            </button>
+        </div>
+
+        <!-- WIDE CARD: Live Activity Log -->
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-xl md:col-span-3">
+            <h3 class="text-slate-400 text-sm font-semibold uppercase tracking-wider mb-4">Live Agent Activities (MCP Stream)</h3>
+            <div class="space-y-3 font-mono text-xs">
+                <div class="flex justify-between items-center bg-slate-950/50 p-3 rounded-lg border border-slate-800/60">
+                    <span class="text-emerald-400">[SUCCESS] [0.8s] AgentWallet contract executed transfer of 5 PROS to 0x3f5...12aB</span>
+                    <span class="text-slate-500">10:13:02 PM</span>
+                </div>
+                <div class="flex justify-between items-center bg-slate-950/50 p-3 rounded-lg border border-slate-800/60">
+                    <span class="text-blue-400">[INFO] Wallet format verified on Pharos Network. zk-KYC compliance check passed.</span>
+                    <span class="text-slate-500">10:12:45 PM</span>
+                </div>
+                <div class="flex justify-between items-center bg-slate-950/50 p-3 rounded-lg border border-slate-800/60">
+                    <span class="text-indigo-400">[MCP-START] FastMCP Server initialized. Gateway running in hip-hop production environment.</span>
+                    <span class="text-slate-500">10:12:00 PM</span>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+</html>
